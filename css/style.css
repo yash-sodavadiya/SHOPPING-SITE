@@ -2365,13 +2365,13 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #212529;
-  background-color: #FFD333;
+  background-color: bisque;
   border-color: #FFD333;
 }
 
 .btn-primary:hover {
   color: #212529;
-  background-color: #ffcb0d;
+  background-color: #fff;
   border-color: #ffc800;
 }
 
@@ -6094,7 +6094,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #FFD333 !important;
+  background-color: bisque;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -9264,7 +9264,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #FFD333 !important;
+  color: bisque;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -9508,7 +9508,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #FFD333;
+  color: bisque;
 }
 
 @media (max-width: 991.98px) {

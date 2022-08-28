@@ -158,7 +158,7 @@ a {
 }
 
 a:hover {
-  color: #e6b400;
+  color: bisque;
   text-decoration: underline;
 }
 
@@ -4582,7 +4582,7 @@ input[type="button"].btn-block {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #FFD333;
+  color: bisque;
   background-color: #fff;
   border: 1px solid #dee2e6;
 }
@@ -4608,16 +4608,16 @@ input[type="button"].btn-block {
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #FFD333;
-  border-color: #FFD333;
+  background-color: bisque;
+  border-color: bisque;
 }
 
 .page-item.disabled .page-link {
-  color: #6c757d;
+  color: bisque;
   pointer-events: none;
   cursor: auto;
   background-color: #fff;
-  border-color: #dee2e6;
+  border-color: bisque;
 }
 
 .pagination-lg .page-link {

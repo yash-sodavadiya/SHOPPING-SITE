@@ -158,7 +158,7 @@ a {
 }
 
 a:hover {
-  color: #e6b400;
+  color: bisque;
   text-decoration: underline;
 }
 
@@ -2365,13 +2365,13 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #212529;
-  background-color: #FFD333;
+  background-color: bisque;
   border-color: #FFD333;
 }
 
 .btn-primary:hover {
   color: #212529;
-  background-color: #ffcb0d;
+  background-color: #fff;
   border-color: #ffc800;
 }
 
@@ -4582,7 +4582,7 @@ input[type="button"].btn-block {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #FFD333;
+  color: bisque;
   background-color: #fff;
   border: 1px solid #dee2e6;
 }
@@ -4608,16 +4608,16 @@ input[type="button"].btn-block {
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #FFD333;
-  border-color: #FFD333;
+  background-color: bisque;
+  border-color: bisque;
 }
 
 .page-item.disabled .page-link {
-  color: #6c757d;
+  color: bisque;
   pointer-events: none;
   cursor: auto;
   background-color: #fff;
-  border-color: #dee2e6;
+  border-color: bisque;
 }
 
 .pagination-lg .page-link {
@@ -6094,13 +6094,13 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #FFD333 !important;
+  background-color: bisque;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #ffc800 !important;
+  background-color: bisque;
 }
 
 .bg-secondary {
@@ -9264,7 +9264,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #FFD333 !important;
+  color: bisque;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -9508,7 +9508,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #FFD333;
+  color: bisque;
 }
 
 @media (max-width: 991.98px) {
@@ -9604,7 +9604,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .cat-item:hover {
-  background: #FFD333;
+  background: bisque;
 }
 
 .cat-item img {
@@ -9679,7 +9679,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .product-item .btn:hover {
-  color: #FFD333 !important;
+  color: bisque;
 }
 
 .table.table-borderless thead tr,

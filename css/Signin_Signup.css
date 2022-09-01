@@ -11,7 +11,8 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: -webkit-linear-gradient(left, #7579ff, #b224ef);
+  background: -webkit-linear-gradient(left, #26262a, #b224ef);
+  font-family: 'Nunito', sans-serif;f, #020111);
   font-family: 'Nunito', sans-serif;
 }
 

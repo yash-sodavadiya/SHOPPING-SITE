@@ -1,0 +1,18 @@
+{
+  "name": "shop",
+  "version": "1.0.0",
+  "description": "this is shoping site for practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.js -e js,hbs"
+  },
+  "author": "yash sodavadiya",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "mongoose": "^7.1.0"
+  }
+}

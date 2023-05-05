@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
 
 const shoping_registrationSchema = new mongoose.Schema({
     name:String,
@@ -9,8 +10,22 @@ const shoping_registrationSchema = new mongoose.Schema({
         required:true
     },
     password:String,
-    confirmpassword:String
+    confirmpassword:String,
+    tokens:[{
+        token:{
+            type:String,
+            required:true
+        }
+    }]
 });
+
+shoping_registrationSchema.methods.generateAuthToken = async function(){
+    const token = jwt.sign({_id:this._id.toString()},"mynameisyashiambcastudentfromsdj");
+    this.tokens = this.tokens.concat({token});
+    await this.save();
+    return token;
+}
+
 
 shoping_registrationSchema.pre("save",async function(next){
     if(this.isModified("password")){

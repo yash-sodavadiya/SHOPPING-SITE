@@ -45,6 +45,9 @@ app.post("/registration", async (req, res) => {
             password: password,
             confirmpassword: req.body.cpassword
         });
+
+        const token = await createUser.generateAuthToken();
+        console.log(token);
         await createUser.save();
         res.status(201).render("login");
 
@@ -65,12 +68,16 @@ app.post('/login', async (req, res) => {
         const useremail = await registrations.findOne({ email: email });
         
         const isMatch = await bcrypt.compare(password, useremail.password);
+
+        const token = await useremail.generateAuthToken();
+        console.log(token);
         
         if (isMatch) {
             const username = useremail.name;
             res.status(201).render("index",{
                 username:username
             });
+            
         } else {
             res.status(404).send("Invalid login");
         }
@@ -82,52 +89,38 @@ app.post('/login', async (req, res) => {
 
 // detail 
 app.get('/detail', (req, res) => {
-    res.render("detail",{
-        username:email
-    });
+    res.render("detail");
 });
 
 // cart 
 app.get('/cart', (req, res) => {
-    res.render("cart",{
-        username:email
-    });
+    res.render("cart");
 });
 
 // checkout
 app.get('/checkout', (req, res) => {
-    res.render("checkout",{
-        username:email
-    });
+    res.render("checkout");
 });
 
 // contact 
 app.get('/contact', (req, res) => {
-    res.render("contact",{
-        username:email
-    });
+    res.render("contact");
 });
 
 // oreder
 
 app.get('/order', (req, res) => {
-    res.render("order",{
-        username:email
-    });
+    res.render("order");
 });
 
 // shop 
 app.get('/shop', (req, res) => {
-    res.render("shop",{
-        username:email
-    });
+    res.render("shop");
 });
 
 // shop2
 app.get('/shop2', (req, res) => {
-    res.render("shop2",{
-                username:email
-            });
+    res.render("shop2");
 });
 
 app.get('/*', (req, res) => {

@@ -61,7 +61,7 @@ $rfs-breakpoint-unit-cache: unit($rfs-breakpoint);
 }
 
 // Responsive font-size mixin
-@mixin rfs($fs, $important: false) {
+@mixin rfs($jekahabajfs, $important: false) {
   // Cache $fs unit
   $fs-unit: if(type-of($fs) == "number", unit($fs), false);
 
